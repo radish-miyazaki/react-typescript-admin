@@ -9,12 +9,27 @@ const Menu: React.FC<{}> = () => {
           <ul className="nav flex-column">
             <li className="nav-item">
               <NavLink to={'/'} exact className="nav-link">
-                ダッシュボード
+                Dashboard
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink to={'/users'} className="nav-link">
-                ユーザー
+                Users
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to={'/roles'} className="nav-link">
+                Roles
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to={'/products'} className="nav-link">
+                Products
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to={'/orders'} className="nav-link">
+                Orders
               </NavLink>
             </li>
           </ul>

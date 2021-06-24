@@ -17,7 +17,8 @@ const Nav: React.FC<{}> = () => {
               data.id,
               data.first_name,
               data.last_name,
-              data.email
+              data.email,
+              data.role
             ))
           })
       }
@@ -31,10 +32,10 @@ const Nav: React.FC<{}> = () => {
   return (
     <>
       <nav className="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <Link to={'/'} className="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">会社名</Link>
+        <Link to={'/'} className="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Company</Link>
         <ul className="my-2 my-md-0 mr-md-3">
           <Link to={'/profile'} className="p-2 text-white text-decoration-none" href="/">{user.name}</Link>
-          <Link to={'/login'} className="p-2 text-white text-decoration-none" onClick={logout}>サインアウト</Link>
+          <Link to={'/login'} className="p-2 text-white text-decoration-none" onClick={logout}>Logout</Link>
         </ul>
       </nav>
     </>
