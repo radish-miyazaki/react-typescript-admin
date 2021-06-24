@@ -11,6 +11,7 @@ const Profile = () => {
 
   useEffect(() => {
     (
+      // TODO: Navで同じAPIを呼んでいるのでReact.Contextでひとまとめにする
       async () => {
         const {data} = await axios.get('/user')
         setFirstName(data.first_name)

@@ -9,6 +9,7 @@ const Nav: React.FC<{}> = () => {
 
   useEffect(() => {
     (
+      // TODO: Profileで同じAPIを呼んでいるのでReact.Contextでひとまとめにする
       async () => {
         await axios.get('/user')
           .then(res => {
